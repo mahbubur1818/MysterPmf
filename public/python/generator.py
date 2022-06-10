@@ -1,4 +1,5 @@
 import sys
+import qrcode
 from PIL import Image
 import os
 try:

@@ -21,7 +21,7 @@ function min(){
     };
       console.log('jquery input is: '+ data);
     $.ajax({
-      url: 'http://localhost:4000/qrCodeGenerator/process',
+      url: 'http://localhost:5000/qrCodeGenerator/process',
       data: data,
       method: 'POST'
     }).then(function (response) {
