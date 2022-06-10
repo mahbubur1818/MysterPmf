@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #d5dbea !important;
+}
+#precon{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#con{
+	width: 70%;
+	color: rgba(0,0,0,0.75);
+}
+
+.title{
+
+	margin: 15px 0;
+}
+#con p{
+
+	margin: 10px 0;
+}
+.code{
+	background: #172617;
+	padding: 20px;
+	color: rgba(255,255,255,0.75);
+	line-height: 21px;
+	margin: 15px 0;
+}
+
+
+@media(max-width:400px){
+	.title{
+		font-size: 1.6rem;
+	}
+		#con{
+			width: 90%;
+	}
+}

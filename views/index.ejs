@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>Myster Pmf</title>
+	<link rel="stylesheet" type="text/css" href="css/<%=stylesheet%>">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kute.js@2.2.0/dist/kute.min.js"></script>
+	<!-- <script src="https://kit.fontawesome.com/6f021384f2.js" crossorigin="anonymous"></script> -->
+	<!-- <script type="text/javascript" src="Js/kute.js"></script> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Josefin+Sans:wght@400&family=Libre+Baskerville&family=PT+Serif:ital,wght@1,400;1,700&family=Pacifico&family=Play&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Source+Serif+Pro:wght@400&family=Tapestry&display=swap" rel="stylesheet">  
+</head>
+<body>
+ <%- include('header.ejs') %>
+
+<div id="issue">
+	<svg id="corner2" id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(499.14659916412313 287.24219773964734)"><path d="M152.4 -60.8C172.2 11.6 145.6 87.7 88.8 131.1C31.9 174.5 -55.2 185.1 -116.5 144.3C-177.9 103.5 -213.5 11.3 -189.8 -66.3C-166.1 -144 -83.1 -207 -8.4 -204.3C66.3 -201.5 132.5 -133.1 152.4 -60.8" fill="#002233"></path></g></svg>
+
+		<svg id="corner1" id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(-21.965126497584464 -0.2836658972582171)"><path d="M129.6 -146.6C178.8 -113.1 237.1 -82.6 259.5 -34.2C281.8 14.3 268.2 80.6 232.2 125.7C196.2 170.7 137.8 194.3 80.5 210.6C23.3 226.8 -32.8 235.5 -86.3 222.5C-139.8 209.4 -190.7 174.4 -212.5 127.3C-234.3 80.1 -226.9 20.7 -214.5 -35.8C-202.1 -92.2 -184.6 -145.7 -148 -181.4C-111.4 -217.1 -55.7 -235.1 -7.8 -225.8C40.2 -216.5 80.4 -180.1 129.6 -146.6" fill="#002233"></path></g></svg>
+
+		<svg id="middle" id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+			<g transform="translate(432.0219587951874 325.67133126218846)"><path id="middle_path" d="M122.4 -161.1C170 -133.9 227.6 -113.3 254.9 -72.6C282.1 -31.9 279 28.8 249.8 69.6C220.6 110.3 165.4 131 119.4 147.6C73.5 164.1 36.7 176.6 -1 178C-38.8 179.4 -77.6 169.8 -110.4 149C-143.2 128.1 -170 96 -195.5 54.8C-221 13.5 -245.1 -37 -235.5 -79.6C-225.9 -122.2 -182.6 -157 -137.7 -185.1C-92.9 -213.2 -46.4 -234.6 -4.5 -228.4C37.4 -222.2 74.8 -188.3 122.4 -161.1" fill="#002233"></path></g>
+			<g transform="translate(451.90432944119766 273.76542640787335)" style="visibility: hidden;"><path id="middle_path2" d="M149.5 -126.4C197.7 -101.4 243.3 -50.7 239.7 -3.7C236 43.4 183.1 86.7 134.9 126.1C86.7 165.4 43.4 200.7 -0.6 201.3C-44.5 201.9 -89.1 167.8 -139.1 128.4C-189.1 89.1 -244.5 44.5 -243.7 0.8C-242.9 -42.9 -185.8 -85.8 -135.8 -110.8C-85.8 -135.8 -42.9 -142.9 3.9 -146.8C50.7 -150.7 101.4 -151.4 149.5 -126.4" fill="#002233" style="transition: all 0.3s ease 0s;"></path></g>
+		</svg>
+
+		
+
+	<div id="welcome_text">
+		<div>Welcome to</div>
+		<div>The World of <span>PMF</span></div>
+	</div>
+	<svg id="header_support" style="background-color:#D9EEE1;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+  <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+</svg>
+
+	<!-- header ends here -->
+
+	<div id="hanker">
+	<div class="ring"></div>
+	<div id="flash"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M381.2 172.8C377.1 164.9 368.9 160 360 160h-156.6l50.84-127.1c2.969-7.375 2.062-15.78-2.406-22.38S239.1 0 232 0h-176C43.97 0 33.81 8.906 32.22 20.84l-32 240C-.7179 267.7 1.376 274.6 5.938 279.8C10.5 285 17.09 288 24 288h146.3l-41.78 194.1c-2.406 11.22 3.469 22.56 14 27.09C145.6 511.4 148.8 512 152 512c7.719 0 15.22-3.75 19.81-10.44l208-304C384.8 190.2 385.4 180.7 381.2 172.8z"/></svg></div>
+	<div class="ring"></div>
+	</div>
+
+	<!-- profile starting -->
+
+	<div id="profile_container">
+
+		<div id="profile_border">
+
+			<div id="profile">
+				<div id="boxx_con">
+					<div class="boxx">
+					<img id="profile_pic" src="img/pmf3.jpg">
+					</div>
+				</div>
+			<div id="profile_info">
+				<div id="text">
+					<p>Hi friends, I am</p>
+					<p>Myster PMF</p>
+					<p>student, developer and Programmer</p>
+					<a href="/About">View Profile</a>
+					<div id="social_media">
+					 <a href="https://facebook.com">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+		      </a>
+					 <a href="https://facebook.com">
+		      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+		      </a>
+					 <a href="https://facebook.com">
+		      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M496.926,366.6c-3.373-9.176-9.8-14.086-17.112-18.153-1.376-.806-2.641-1.451-3.72-1.947-2.182-1.128-4.414-2.22-6.634-3.373-22.8-12.09-40.609-27.341-52.959-45.42a102.889,102.889,0,0,1-9.089-16.12c-1.054-3.013-1-4.724-.248-6.287a10.221,10.221,0,0,1,2.914-3.038c3.918-2.591,7.96-5.22,10.7-6.993,4.885-3.162,8.754-5.667,11.246-7.44,9.362-6.547,15.909-13.5,20-21.278a42.371,42.371,0,0,0,2.1-35.191c-6.2-16.318-21.613-26.449-40.287-26.449a55.543,55.543,0,0,0-11.718,1.24c-1.029.224-2.059.459-3.063.72.174-11.16-.074-22.94-1.066-34.534-3.522-40.758-17.794-62.123-32.674-79.16A130.167,130.167,0,0,0,332.1,36.443C309.515,23.547,283.91,17,256,17S202.6,23.547,180,36.443a129.735,129.735,0,0,0-33.281,26.783c-14.88,17.038-29.152,38.44-32.673,79.161-.992,11.594-1.24,23.435-1.079,34.533-1-.26-2.021-.5-3.051-.719a55.461,55.461,0,0,0-11.717-1.24c-18.687,0-34.125,10.131-40.3,26.449a42.423,42.423,0,0,0,2.046,35.228c4.105,7.774,10.652,14.731,20.014,21.278,2.48,1.736,6.361,4.24,11.246,7.44,2.641,1.711,6.5,4.216,10.28,6.72a11.054,11.054,0,0,1,3.3,3.311c.794,1.624.818,3.373-.36,6.6a102.02,102.02,0,0,1-8.94,15.785c-12.077,17.669-29.363,32.648-51.434,44.639C32.355,348.608,20.2,352.75,15.069,366.7c-3.868,10.528-1.339,22.506,8.494,32.6a49.137,49.137,0,0,0,12.4,9.387,134.337,134.337,0,0,0,30.342,12.139,20.024,20.024,0,0,1,6.126,2.741c3.583,3.137,3.075,7.861,7.849,14.78a34.468,34.468,0,0,0,8.977,9.127c10.019,6.919,21.278,7.353,33.207,7.811,10.776.41,22.989.881,36.939,5.481,5.778,1.91,11.78,5.605,18.736,9.92C194.842,480.951,217.707,495,255.973,495s61.292-14.123,78.118-24.428c6.907-4.24,12.872-7.9,18.489-9.758,13.949-4.613,26.163-5.072,36.939-5.481,11.928-.459,23.187-.893,33.206-7.812a34.584,34.584,0,0,0,10.218-11.16c3.434-5.84,3.348-9.919,6.572-12.771a18.971,18.971,0,0,1,5.753-2.629A134.893,134.893,0,0,0,476.02,408.71a48.344,48.344,0,0,0,13.019-10.193l.124-.149C498.389,388.5,500.708,376.867,496.926,366.6Zm-34.013,18.277c-20.745,11.458-34.533,10.23-45.259,17.137-9.114,5.865-3.72,18.513-10.342,23.076-8.134,5.617-32.177-.4-63.239,9.858-25.618,8.469-41.961,32.822-88.038,32.822s-62.036-24.3-88.076-32.884c-31-10.255-55.092-4.241-63.239-9.858-6.609-4.563-1.24-17.211-10.341-23.076-10.739-6.907-24.527-5.679-45.26-17.075-13.206-7.291-5.716-11.8-1.314-13.937,75.143-36.381,87.133-92.552,87.666-96.719.645-5.046,1.364-9.014-4.191-14.148-5.369-4.96-29.189-19.7-35.8-24.316-10.937-7.638-15.748-15.264-12.2-24.638,2.48-6.485,8.531-8.928,14.879-8.928a27.643,27.643,0,0,1,5.965.67c12,2.6,23.659,8.617,30.392,10.242a10.749,10.749,0,0,0,2.48.335c3.6,0,4.86-1.811,4.612-5.927-.768-13.132-2.628-38.725-.558-62.644,2.84-32.909,13.442-49.215,26.04-63.636,6.051-6.932,34.484-36.976,88.857-36.976s82.88,29.92,88.931,36.827c12.611,14.421,23.225,30.727,26.04,63.636,2.071,23.919.285,49.525-.558,62.644-.285,4.327,1.017,5.927,4.613,5.927a10.648,10.648,0,0,0,2.48-.335c6.745-1.624,18.4-7.638,30.4-10.242a27.641,27.641,0,0,1,5.964-.67c6.386,0,12.4,2.48,14.88,8.928,3.546,9.374-1.24,17-12.189,24.639-6.609,4.612-30.429,19.343-35.8,24.315-5.568,5.134-4.836,9.1-4.191,14.149.533,4.228,12.511,60.4,87.666,96.718C468.629,373.011,476.119,377.524,462.913,384.877Z"/></svg>
+		      </a>
+				</div>
+				</div>
+				<div id="social_media">
+				</div>
+			</div>
+		</div>
+			</div>
+			
+	</div>
+
+	<!-- my learning section -->
+
+	<svg id="learning_support" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300"><path fill="#D1D5EC" fill-opacity="1" d="M0,64L16,101.3C32,139,64,213,96,234.7C128,256,160,224,192,181.3C224,139,256,85,288,96C320,107,352,181,384,202.7C416,224,448,192,480,154.7C512,117,544,75,576,69.3C608,64,640,96,672,90.7C704,85,736,43,768,37.3C800,32,832,64,864,80C896,96,928,96,960,85.3C992,75,1024,53,1056,64C1088,75,1120,117,1152,138.7C1184,160,1216,160,1248,133.3C1280,107,1312,53,1344,58.7C1376,64,1408,128,1424,160L1440,192L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"></path></svg>
+	<svg id="learning_support2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D1D5EC" fill-opacity="1" d="M0,192L0,256L1440,256L1440,0L0,0L0,0Z"></path></svg>
+	<div id="skills_container">
+		<div>
+			My Learnings
+		</div>
+		<div id="main_container">
+			<div id="circle_skill">
+				<div id="circle_box">
+					<div id="circle">
+						<div class="circle per-75">
+			    		<div class="inner"><span>75%</span></div>
+						</div>
+					</div>
+				</div>
+				<h2>Web Development</h2>
+			</div>
+			<div id="list_container">
+				<div id="list">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg>
+					<div id="progress" ><div > HTML</div></div>
+				</div>
+				<div id="list">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
+					<div id="progress" ><div > CSS</div></div>
+				</div>
+				<div id="list">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>
+					<div id="progress" ><div > JavaScript</div></div>
+				</div>
+				<div id="list">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg>
+					<div id="progress" ><div > Python</div></div>
+				</div>
+				<div id="list">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 508c-6.7 0-13.5-1.8-19.4-5.2l-61.7-36.5c-9.2-5.2-4.7-7-1.7-8 12.3-4.3 14.8-5.2 27.9-12.7 1.4-.8 3.2-.5 4.6.4l47.4 28.1c1.7 1 4.1 1 5.7 0l184.7-106.6c1.7-1 2.8-3 2.8-5V149.3c0-2.1-1.1-4-2.9-5.1L226.8 37.7c-1.7-1-4-1-5.7 0L36.6 144.3c-1.8 1-2.9 3-2.9 5.1v213.1c0 2 1.1 4 2.9 4.9l50.6 29.2c27.5 13.7 44.3-2.4 44.3-18.7V167.5c0-3 2.4-5.3 5.4-5.3h23.4c2.9 0 5.4 2.3 5.4 5.3V378c0 36.6-20 57.6-54.7 57.6-10.7 0-19.1 0-42.5-11.6l-48.4-27.9C8.1 389.2.7 376.3.7 362.4V149.3c0-13.8 7.4-26.8 19.4-33.7L204.6 9c11.7-6.6 27.2-6.6 38.8 0l184.7 106.7c12 6.9 19.4 19.8 19.4 33.7v213.1c0 13.8-7.4 26.7-19.4 33.7L243.4 502.8c-5.9 3.4-12.6 5.2-19.4 5.2zm149.1-210.1c0-39.9-27-50.5-83.7-58-57.4-7.6-63.2-11.5-63.2-24.9 0-11.1 4.9-25.9 47.4-25.9 37.9 0 51.9 8.2 57.7 33.8.5 2.4 2.7 4.2 5.2 4.2h24c1.5 0 2.9-.6 3.9-1.7s1.5-2.6 1.4-4.1c-3.7-44.1-33-64.6-92.2-64.6-52.7 0-84.1 22.2-84.1 59.5 0 40.4 31.3 51.6 81.8 56.6 60.5 5.9 65.2 14.8 65.2 26.7 0 20.6-16.6 29.4-55.5 29.4-48.9 0-59.6-12.3-63.2-36.6-.4-2.6-2.6-4.5-5.3-4.5h-23.9c-3 0-5.3 2.4-5.3 5.3 0 31.1 16.9 68.2 97.8 68.2 58.4-.1 92-23.2 92-63.4z"/></svg>
+					<div id="progress" ><div > Node Js</div></div>
+				</div>
+				<div id="list">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M352 359.8c22.46 0 31.1 19.53 31.1 31.99c0 23.14-66.96 88.23-164.5 88.23c-137.1 0-219.4-117.8-219.4-224c0-103.8 79.87-223.1 219.4-223.1c99.47 0 164.5 66.12 164.5 88.23c0 12.27-9.527 32.01-32.01 32.01c-31.32 0-45.8-56.25-132.5-56.25c-97.99 0-155.4 84.59-155.4 159.1c0 74.03 56.42 160 155.4 160C306.5 416 320.5 359.8 352 359.8z"/></svg>
+					<div id="progress" ><div > C</div></div>
+				</div>
+				<div id="list">
+					<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 312.553 312.553" style="enable-background:new 0 0 312.553 312.553;" xml:space="preserve">
+<path d="M302.553,0H10C4.477,0,0,4.478,0,10v292.553c0,5.522,4.477,10,10,10h292.553c5.523,0,10-4.478,10-10V10
+	C312.553,4.478,308.076,0,302.553,0z M122.031,193.288c-9.481,8.296-21.592,12.865-34.102,12.865
+	c-28.108,0-50.976-22.4-50.976-49.934c0-27.47,22.868-49.818,50.976-49.818c12.527,0,24.597,4.53,33.987,12.756
+	c3.874,3.392,4.263,9.283,0.87,13.156c-3.393,3.874-9.283,4.263-13.157,0.869c-5.988-5.245-13.695-8.135-21.7-8.135
+	c-17.827,0-32.33,13.983-32.33,31.172c0,17.251,14.503,31.286,32.33,31.286c7.992,0,15.742-2.931,21.822-8.251
+	c3.875-3.393,9.765-2.998,13.156,0.877C126.298,184.007,125.906,189.898,122.031,193.288z M185.951,165.6h-18.789v18.79
+	c0,5.149-4.174,9.323-9.324,9.323s-9.324-4.174-9.324-9.323V165.6h-18.788c-5.149,0-9.324-4.174-9.324-9.323
+	s4.174-9.323,9.324-9.323h18.788v-18.789c0-5.149,4.174-9.323,9.324-9.323s9.324,4.174,9.324,9.323v18.789h18.789
+	c5.149,0,9.324,4.174,9.324,9.323S191.101,165.6,185.951,165.6z M266.276,165.6h-18.789v18.79c0,5.149-4.174,9.323-9.324,9.323
+	c-5.149,0-9.324-4.174-9.324-9.323V165.6h-18.788c-5.149,0-9.324-4.174-9.324-9.323s4.174-9.323,9.324-9.323h18.788v-18.789
+	c0-5.149,4.174-9.323,9.324-9.323c5.149,0,9.324,4.174,9.324,9.323v18.789h18.789c5.149,0,9.324,4.174,9.324,9.323
+	S271.426,165.6,266.276,165.6z"/>
+</svg>
+
+					<div id="progress" ><div > C++</div></div>
+				</div>
+						<div id="list">
+						  <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M 3.3378906 1.0058594 C 2.5348906 0.95985937 1.7166875 1.34025 1.3046875 2.03125 C 1.1056875 2.36825 1.0039531 2.7370469 1.0019531 3.1230469 C 1.0009531 4.0540469 1.6019375 4.8107187 1.9609375 5.2617188 C 2.0239375 5.3417188 2.081625 5.4110938 2.140625 5.4960938 L 2.3027344 5.7109375 C 2.4647344 5.9219375 2.646125 6.1592969 2.703125 6.2792969 C 2.723125 6.3352969 2.7492031 6.4326875 2.7832031 6.5546875 C 2.9402031 7.1196875 3.2332188 8.16975 3.6992188 8.96875 C 3.8862188 9.29175 4.1517969 9.6954687 4.3417969 9.9804688 C 4.2147969 10.616469 4 11.788 4 12.5 C 4 13.75 4.2592188 14.753875 4.8242188 15.671875 C 5.0332188 15.999875 5.671 17 6.75 17 C 7.133 17 7.7694062 16.850391 7.9414062 15.900391 C 8.7064063 16.887391 9.6274687 17.935156 11.230469 18.910156 C 11.309469 18.962156 11.399 19 11.5 19 C 11.776 19 12 18.776 12 18.5 C 12 18.333 11.912156 18.192563 11.785156 18.101562 C 10.415156 16.780562 8.605 14.567719 7.875 12.761719 C 7.724 12.386719 7.2268125 12.329922 7.0078125 12.669922 C 6.7798125 13.024922 6.513625 13.504375 6.265625 14.109375 C 6.084625 13.651375 6 13.135 6 12.5 C 6 12.034 6.2634375 10.638172 6.3984375 9.9511719 C 6.4484375 9.6981719 6.3969531 9.4444688 6.2519531 9.2304688 C 6.0059531 8.8674688 5.6197344 8.2918906 5.4277344 7.9628906 C 5.0917344 7.3868906 4.8439375 6.4955781 4.7109375 6.0175781 C 4.6469375 5.7855781 4.594875 5.6159531 4.546875 5.5019531 C 4.371875 5.1219531 4.1165781 4.7881406 3.8925781 4.4941406 L 3.765625 4.3300781 C 3.702625 4.2390781 3.6193906 4.132625 3.5253906 4.015625 C 3.3423906 3.785625 3.0017187 3.3580313 3.0117188 3.0820312 L 3.1230469 3.0039062 L 3.125 3 C 3.92 3 4.9440781 3.5633906 5.3300781 3.7753906 C 5.4550781 3.8443906 5.5486563 3.8920625 5.5976562 3.9140625 L 5.7714844 3.9902344 L 6.1132812 4.0039062 C 6.5602813 4.0139062 7.9189062 4.0437344 8.8789062 4.4277344 C 10.629906 5.1277344 11.598031 5.830375 12.582031 7.109375 C 13.903031 8.826375 14.750328 10.830047 15.236328 12.248047 C 15.462328 12.906047 15.659344 13.656625 15.777344 14.140625 C 15.854344 14.457625 16.082719 14.709172 16.386719 14.826172 C 16.825719 14.995172 17.480953 15.271703 18.001953 15.595703 C 18.444953 15.870703 18.939875 16.227687 19.421875 16.679688 C 18.326875 16.950688 17.666359 17.382734 17.318359 17.677734 C 17.112359 17.852734 17.094531 18.159234 17.269531 18.365234 C 17.607531 18.763234 18.355953 19.423047 19.751953 20.373047 C 20.800953 21.087047 21.909141 22.4945 22.119141 22.8125 C 22.210141 22.9255 22.344 23 22.5 23 C 22.776 23 23 22.776 23 22.5 C 23 22.396 22.968062 22.300703 22.914062 22.220703 C 22.896062 22.194703 22.764891 21.974812 22.712891 21.882812 C 22.212891 20.999813 21.267688 19.728813 20.304688 18.507812 C 20.960687 18.297812 21.697469 18.143875 22.230469 18.046875 C 22.585469 17.981875 22.757734 17.572391 22.552734 17.275391 C 22.278734 16.880391 21.878 16.350359 21.375 15.818359 C 19.964 14.326359 18.413656 13.479859 17.597656 13.130859 C 17.264656 11.863859 16.262969 8.613625 14.167969 5.890625 C 12.968969 4.331625 11.693094 3.3993125 9.6210938 2.5703125 C 8.3940937 2.0803125 6.9187188 2.0218594 6.2617188 2.0058594 C 5.7187187 1.7078594 4.5478906 1.0748594 3.3378906 1.0058594 z M 7.140625 5 C 7.125625 5 6.7779531 5.0015625 6.3769531 5.1015625 C 6.2959531 5.1225625 6.2301719 5.1817656 6.2011719 5.2597656 C 6.1731719 5.3377656 6.185375 5.4241875 6.234375 5.4921875 L 7.2675781 6.8984375 C 7.3145781 6.9624375 7.37175 7.025 7.46875 7 C 7.54775 7 7.6219219 6.9633906 7.6699219 6.9003906 C 7.9969219 6.4643906 8 5.9585 8 5.9375 C 8 5.9075 7.995375 5.8776094 7.984375 5.8496094 C 7.975375 5.8256094 7.7532344 5.2494844 7.2402344 5.0214844 C 7.2082344 5.0074844 7.174625 5 7.140625 5 z"/></svg>
+					<div id="progress" ><div >MySQL</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+		<!-- programming section -->
+
+
+		<div id="blog_section">
+			<div>Programming</div>
+			<div id="blog_container">
+				<div class="card">
+					<div class="box">
+						<div class="content">
+							<img src="img/textToImage.png">
+							<h2>Extract text from image</h2>
+							<div>It's a simple program to fetch text from a simple image using tesseract.</div>
+							<a href="/Programming/blog1">Read more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="box">
+						<div class="content">
+							<img src="img/textToAudio.png">
+							<h2>Convert text to Audio using python</h2>
+							<div>Only a few lines of code, text to speak program to covert any text imto mp3 audio.</div>
+							<a href="/Programming/blog2">Read more</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="box">
+						<div class="content">
+							<img src="img/freesms.png">
+							<h2>Send free sms using python</h2>
+							<div>This python program will send free sms to your desired number for free using twilio API.</div>
+							<a href="/Programming/blog4">Read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- tools section -->
+
+		<div id="services_container">
+			<div id="service_text">Tools</div>
+			<div class="tools">
+				<div onclick="location.href('/qrCodeGenerator')" class="tool">
+						<img class="tool_image" src="img/qrCodeGenerator.png">
+					<h1>QR Code Generator</h1>
+				</div>
+				<div class="tool">
+					<img class="tool_image" src="img/qrCodeScanner.png">
+					<h1>QR Code Reader</h1>
+				</div>
+				<div class="tool">
+					<img class="tool_image" src="img/textToMorseCode.png">
+					<h1>Text to Morse Code</h1>
+				</div>
+			</div>
+			<a href="" id="explore">Explore More</a>
+
+		</div>
+			
+
+		<!-- COMMENT SECTION -->
+
+		<div id="comment_container">
+			<div id="comment_text">Comments</div>
+			<div id="comment">
+				<div class="comment_list active_comment">
+					<img src="icon/Charmander.jpg">
+					<div class="comment">
+						Wow! It's really nice. I suggest everyone to use this website.OOPs... It's really nice. I suggest everyone to use this website.OOPs... It's really nice. I suggest everyone to use this website.
+					</div>
+					<div class="name">Flercon</div>
+
+				</div>
+				<div class="comment_list">
+					<img src="icon/Squirtle.jpg">
+					<div class="comment">
+						OOPs... It's really nice. I suggest everyone to use this website.
+					</div>
+					<div class="name">Flercon</div>
+
+				</div>
+				<div class="comment_list">
+					<img src="icon/bot.png">
+					<div class="comment">
+						Wow! It's really nice. I suggest everyone to use this website.
+					</div>
+					<div class="name">Flercon</div>
+				</div>
+				<div class="comment_list">
+					<img src="icon/Charmander.jpg">
+					<div class="comment">
+						Wow! It's really nice. I suggest everyone to use this website.
+					</div>
+					<div class="name">Flercon</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- contact section -->
+
+		<div id="contact_container">
+			<!-- <div id="contact_1" class="contact">
+          <p>Want more tools?</p>
+          <p>If you want more tools or if you have any suggestion or feedback , please leave a message.</p>
+          <img src="">
+        </div> -->
+        <div class="contact" id="contact_1">
+        	<img src="img/blue_cat.svg">
+        </div>
+        <div id="contact_2" class="contact">
+          <p>Leave a Message</p>
+          <form>      
+		  <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+		  <input name="email" type="text" class="feedback-input" placeholder="Email" />
+		  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+		  <input type="submit" value="SUBMIT"/>
+		</form>
+        </div>
+		</div>
+
+		<!-- footer section -->
+
+		<div id="main_footer">
+        <div>
+          <div id="footer">
+          <div id="pmf">Myster <img src="icon/p.png"><img src="icon/m.png"><img src="icon/f.png"></div>
+        <div id="vertical"><div></div></div>
+        <div id="link">
+          <div>
+            <a href="/About">About Us</a>
+            <a href="/contact">Contact Us</a>
+          </div>
+          <div>
+            <a href="/contact">Privacy & Policy</a>
+            <a href="/contact">Term & Condition</a>
+          </div>
+        </div>
+        </div>
+        <div id="copyright">&copy Myster PMF 2022-2022</div>
+      </div>
+        </div>
+</div>
+
+	<script type="text/javascript" src="Js/index_asset.js"></script>
+	<script type="text/javascript" src="Js/navbar.js"></script>
+    </div>
+  <%- include('footer.ejs') %>
