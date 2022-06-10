@@ -1,5 +1,5 @@
 const express = require('express');
-const port = 4000;
+const port = 5000;
 const spawn = require("child_process").spawn;
 const bodyParser = require("body-parser");
 //const qrCodeGen = require('./public/Js/qrCodeGenerator')(spawn);
