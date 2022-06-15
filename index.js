@@ -64,7 +64,7 @@ app.post('/qrCodeGenerator/process',(req,res)=>{
   pythonProcesses.stdout.on('data', (data) => {
   data = data.toString();
   //data = data.strip();
-  data = 'python/qrCode/' + 'data';
+  data = 'python/' + data;
   console.log("data is",data);
   setTimeout(function(){ 
   res.send(data);
