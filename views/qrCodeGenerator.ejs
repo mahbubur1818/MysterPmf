@@ -13,6 +13,10 @@
         justify-content: center;
         align-items: center;
       }
+      html, body {
+        width: auto !important;
+        overflow-x: hidden !important
+}
       #con{
         margin: 0 10%;
       }
@@ -66,6 +70,15 @@
         justify-content: center;
         align-items: center;
       }
+     #preLoader{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #preLoader img{
+        margin: 100px;
+      }
       #qr{
         width: 200px;
         height: 200px;
@@ -80,6 +93,35 @@
         margin-right: 160%;
         margin-left: -80%;
       }
+      #colourPicker{
+        display: inline-block;
+      }
+      #option{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        transition: 1s;
+        overflow: hidden;
+      }
+      #advance{
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      #advance > div, #option > div{
+       
+      }
+      
+.status {
+  margin: 5px;
+  color: green;
+}
+
+
     </style>
   </head>
   <body onload="min()">
@@ -89,14 +131,26 @@
            <h1>Generate QR Code</h1>
           <img src="img/qrCodeGenerator.png">
           <div class="catagory">
-          <div id="string" class="active">Text</div>
-          <div id="url">URL</div>
+          <div id="string" class="ctg">Text</div>
+          <div id="url" class="ctg">URL</div>
           </div>
         </div>
-        <form method="post" id="in_con">
-         <textarea id="text" name="text" placeholder="Enter text"></textarea>
+        <form method="post" id="in_con" autocomplete="off">
+         <textarea required="" id="text" name="text" placeholder="Enter Text"></textarea>
+         <div id="advance">
+         <div><input id="checkbox" type="checkbox"> Advance Option</div>
+         <div id="option">
+           <div><!-- Choose Color <input type="color" id="colourPicker"> --></div>
+           <div><p>Choose Color <input type="color" id="colourPicker"></p>
+             <p>Import Your Logo</p><input type="file" id="file"><p id="warning"></p><p id="res"></p>
+  
+          <span class="status"></span>
+             </div>
+         </div>
+         </div>
         <button type="submit" id="generate">Generate</button>
         </form>
+        <div id="preLoader"><img src="img/preLoader.gif"></div>
         <div id="output">
           <img id="qr" src="">
           <div>
@@ -105,5 +159,6 @@
       </div>
     </div>
     <script type="text/javascript" src="Js/qrGenProcess.js"></script>
+    <script type="text/javascript" src="Js/uploadFile.js"></script>
   </body>
 </html>

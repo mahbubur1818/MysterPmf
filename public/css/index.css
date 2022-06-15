@@ -24,9 +24,49 @@ body::before{
 #issue{
 	overflow: hidden;
 }
+/* comment animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+} 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
+.active {
+  background-color: #717171;
+}
+#dotDiv{
+  text-align: center;
+}
 
-
+#flashPath{
+  animation: Flash 3s linear infinite;
+}
+@keyframes Flash{
+  0%{
+    fill: green;
+  }
+  25%{
+    fill: gold;
+  }
+  50%{
+    fill: red;
+  }
+  75%{
+    fill: orange;
+  }
+}
 /*svg design*/
 
 #corner1{
@@ -117,7 +157,7 @@ body::before{
   height: 60px;
   border-radius: 50%;
   padding: 10px;
-  border: 3px solid blue;
+  border: 3px solid black;
   /*! background: linear-gradient(45deg,#e3d1d1,#c1acb9 17%,#c3b0d2 34%,#b96868 51%,#553795 68%,#bfa8a8 85%,#bfaecc); */
   animation: progress-animation 2s linear infinite;
   background-size: 200px 100px;
@@ -477,12 +517,11 @@ border-radius: 10px;
  display: flex;
 
 }
-.tools:nth-of-type(n){
-
-	/*! margin: 10px 10%; */
+.tools > a{
+text-decoration: none;
+color: black;
 }
 .tool{
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -720,9 +759,6 @@ width: 170px;
   color: white;
 }
 .comment_list{
-
-  /*! margin: 20px 15px; */
-  /*! background: aliceblue; */
   padding: 10px 20px;
   text-align: center;
   /*! padding: 70px 54px; */
@@ -742,6 +778,7 @@ width: 170px;
 }
 .name{
 	color:rgba(36, 31, 31, 0.5);
+	margin: 5px;
 }
 .active_comment{
     display: block;
@@ -827,7 +864,7 @@ width: 170px;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 54px;
+  margin-bottom: 40px;
   /*! margin-right: 65px; */
   color: #1a0a70;
   /*! font-family: 'Chakra Petch', sans-serif; */
@@ -842,7 +879,7 @@ width: 170px;
   color: black;
   /*! box-shadow: 3px 4px 15px rgba(0,0,0,0.4); */
 }
-form { max-width:400px; margin:50px auto; }
+form { max-width:400px; margin:40px auto; }
 
 .feedback-input {
   color:white;

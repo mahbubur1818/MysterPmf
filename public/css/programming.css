@@ -188,7 +188,9 @@ body::before{
 	color: #059862;
 }
 #description >div{
-	
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin: 10px 0;
 }
 #description > div img{
@@ -197,7 +199,6 @@ body::before{
 	height: 10px;
 }
 #description > div > div{
-	
 	display: inline;
 	margin-left: 10px;
 	color: #736d6d;
@@ -206,6 +207,7 @@ body::before{
 	
 	color: rgba(0,0,0,0.7);
 }
+
 
 /*....*/
 
