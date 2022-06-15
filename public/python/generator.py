@@ -5,12 +5,12 @@ from PIL import Image
 try:
   text = sys.argv[1]
   color = sys.argv[2]
-  f=open('.public/python/log.txt','r')
+  f=open('./public/python/log.txt','r')
   qrNo = f.read()
 
   qrNo = int(qrNo) + 1
   f.close()
-  f=open('.public/python/log.txt','w')
+  f=open('./public/python/log.txt','w')
   f.write(str(qrNo))
   f.close()
 
