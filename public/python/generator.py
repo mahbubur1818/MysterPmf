@@ -21,7 +21,7 @@ try:
 
   qr.add_data(text)
   qr.make(fit=True)
-  img = qr.make_image(fill=color, back_color='white')
+  img = qr.make_image(fill=color, back_color='white').convert('RGB')
   path='qrCode/Qr-Code-'+str(qrNo)+'-m.Pmf'+ '.png'
   img.save('./public/python/' + path)
 
