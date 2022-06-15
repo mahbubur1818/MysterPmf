@@ -50,6 +50,9 @@ body::before{
 #dotDiv{
   text-align: center;
 }
+#gen{
+  color: #3aa2d1;
+}
 
 #flashPath{
   animation: Flash 3s linear infinite;

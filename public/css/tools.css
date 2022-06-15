@@ -98,11 +98,9 @@ body::before{
  display: flex;
 
 }
-.tools{
-
-	/*! display: flex; */
-	/*! flex-wrap: wrap; */
-	/*! justify-content: center; */
+.tools a{
+  text-decoration: none;
+  color: #3aa2d1;
 }
 .tool{
 

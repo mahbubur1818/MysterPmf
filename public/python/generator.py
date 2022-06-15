@@ -17,7 +17,7 @@ try:
   QRcode = qrcode.QRCode(
       error_correction=qrcode.constants.ERROR_CORRECT_H
   )
-  QRcode.add_data(url)
+  QRcode.add_data(text)
    
   # generating QR code
   QRcode.make()
