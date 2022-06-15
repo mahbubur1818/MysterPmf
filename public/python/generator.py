@@ -23,7 +23,7 @@ try:
   qr.make(fit=True)
   img = qr.make_image(fill=color, back_color='white')
   path='qrCode/Qr-Code-'+str(qrNo)+'-m.Pmf'+ '.png'
-  img.save('./public/puthon' + path)
+  img.save('./public/python/' + path)
 
 except Exception as e:
   print(str(e))
