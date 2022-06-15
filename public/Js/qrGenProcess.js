@@ -52,6 +52,7 @@ $("#checkbox").click(()=>{
     var colorx = document.getElementById('colourPicker').value;
     let result = $('#output').css('display');
     if (result == 'block') {
+      console.log("display is block")
       $('#output').css({'display':'none'});
     }
     $('#generate').css({'background':'#213259'});
@@ -69,6 +70,7 @@ $("#checkbox").click(()=>{
     }).then(function (response) {
       $('#qr').attr('src',response);
       $('#output').css({'display':'block'});
+      $('#output').css({'display':'flex'});
       $('#text').val("");
       $('#preLoader').hide()
 
