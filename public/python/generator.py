@@ -13,17 +13,18 @@ try:
   f=open('./public/python/log.txt','w')
   f.write(str(qrNo))
   f.close()
-
-  qr = qrcode.QRCode(
-        version=1,
-        box_size=10,
-        border=5)
-
-  qr.add_data(text)
-  qr.make(fit=True)
-  img = qr.make_image(fill=color, back_color='white').convert('RGB')
+  
+  QRcode = qrcode.QRCode(
+      error_correction=qrcode.constants.ERROR_CORRECT_H
+  )
+  QRcode.add_data(url)
+   
+  # generating QR code
+  QRcode.make()
+  QRimg = QRcode.make_image(
+      fill_color=color, back_color="white").convert('RGB')
   path='qrCode/Qr-Code-'+str(qrNo)+'-m.Pmf'+ '.png'
-  img.save('./public/python/' + path)
+  QRimg.save('./public/python/'+ path)
 
 except Exception as e:
   print(str(e))

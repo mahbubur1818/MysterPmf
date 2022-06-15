@@ -87,7 +87,7 @@ console.log('response is '+ response)
 
 function DownloadFile(fileName) {
             //Set the File URL.
-      var url = fileName;
+      var url = $("#output img").attr("src")";
 console.log("url is " + url)
       $.ajax({
           url: url,
