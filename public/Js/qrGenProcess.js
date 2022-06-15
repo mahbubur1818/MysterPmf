@@ -87,7 +87,7 @@ console.log('response is '+ response)
 
 function DownloadFile(fileName) {
             //Set the File URL.
-      var url = $("#output img").attr("src");
+      var url = fileName;
 console.log("url is " + url)
       $.ajax({
           url: url,
@@ -123,6 +123,7 @@ console.log("url is " + url)
                   //download
                   $('#download').click(()=>{
                   a[0].click();
+                  location.reload(true);
                   });
                   $("body").remove(a);
               }
