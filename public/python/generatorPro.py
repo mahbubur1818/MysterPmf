@@ -7,12 +7,12 @@ try:
   text = sys.argv[1]
   color = sys.argv[2]
   Logo_link = sys.argv[3]
-  f=open('log.txt','r')
+  f=open('./public/python/log.txt','r')
   qrNo = f.read()
     
   qrNo = int(qrNo) + 1
   f.close()
-  f=open('log.txt','w')
+  f=open('./public/python/log.txt','w')
   f.write(str(qrNo))
   f.close()
    
@@ -52,7 +52,7 @@ try:
    
   # save the QR code generated
   path='qrCode/Qr-Code-'+str(qrNo)+'-m.Pmf'+ '.png'
-  QRimg.save(path)
+  QRimg.save('./public/python/'+ path)
    
 except Exception as e:
   print(str(e))

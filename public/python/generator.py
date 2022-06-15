@@ -5,26 +5,26 @@ from PIL import Image
 try:
   text = sys.argv[1]
   color = sys.argv[2]
-  f=open('log.txt','r')
+  f=open('.public/python/log.txt','r')
   qrNo = f.read()
-  
+
   qrNo = int(qrNo) + 1
   f.close()
-  f=open('log.txt','w')
+  f=open('.public/python/log.txt','w')
   f.write(str(qrNo))
   f.close()
-  
+
   qr = qrcode.QRCode(
         version=1,
         box_size=10,
         border=5)
-  
+
   qr.add_data(text)
   qr.make(fit=True)
   img = qr.make_image(fill=color, back_color='white')
   path='qrCode/Qr-Code-'+str(qrNo)+'-m.Pmf'+ '.png'
-  img.save(path)
-  
+  img.save('./public/puthon' + path)
+
 except Exception as e:
   print(str(e))
   sys.stdout.flush()

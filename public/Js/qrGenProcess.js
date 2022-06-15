@@ -72,7 +72,7 @@ $("#checkbox").click(()=>{
       $('#text').val("");
       $('#preLoader').hide()
 
-
+console.log('response is '+ response)
  document.getElementById('download').addEventListener("click",DownloadFile(response));
      // $('body').append(response);
      
@@ -86,7 +86,7 @@ $("#checkbox").click(()=>{
 function DownloadFile(fileName) {
             //Set the File URL.
       var url = fileName;
-
+console.log("url is " + url)
       $.ajax({
           url: url,
           cache: false,

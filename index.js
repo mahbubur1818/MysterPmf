@@ -53,6 +53,7 @@ app.post('/qrCodeGenerator/process',(req,res)=>{
   let name = req.body.location;
   //name = name.strip();
   console.log(name);
+  console.log(color);
   
   if (name == 'false'){
   console.log('without name')
@@ -68,7 +69,7 @@ app.post('/qrCodeGenerator/process',(req,res)=>{
   console.log("data is",data);
   setTimeout(function(){ 
   res.send(data);
-  }, 500);
+  }, 200);
 });
 })
 app.post("/qrCodeGenerator/process/upload",(req,res)=>{
