@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+ 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<script>
+	$(window).on('load',function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");
+	}); 
+	</script>
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<title>Myster Pmf</title>
 	<link rel="stylesheet" type="text/css" href="css/<%=stylesheet%>">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kute.js@2.2.0/dist/kute.min.js"></script>
 	<!-- <script src="https://kit.fontawesome.com/6f021384f2.js" crossorigin="anonymous"></script> -->
 	<!-- <script type="text/javascript" src="Js/kute.js"></script> -->
@@ -15,6 +23,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Source+Serif+Pro:wght@400&family=Tapestry&display=swap" rel="stylesheet">  
 </head>
 <body>
+<div class="se-pre-con"></div>  
  <%- include('header.ejs') %>
 
 <div id="issue">
