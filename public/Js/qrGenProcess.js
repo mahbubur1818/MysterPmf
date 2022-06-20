@@ -46,7 +46,6 @@ $("#checkbox").click(()=>{
       var name = $('#res').html()
       console.log(" name is" + name)
     }
-    console.log("outside name is " + name)
     var n = $(document).height();
     $('html, body').animate({ scrollTop: n }, 50);
     var colorx = document.getElementById('colourPicker').value;
@@ -64,7 +63,7 @@ $("#checkbox").click(()=>{
     };
       console.log(data);
     $.ajax({
-      url: 'http://88.99.83.158:5000/qrCodeGenerator/process',
+      url: 'https://mysterpmf.me/qrCodeGenerator/process',
       data: data,
       method: 'POST'
     }).then(function (response) {

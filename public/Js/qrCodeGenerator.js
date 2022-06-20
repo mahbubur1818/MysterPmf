@@ -1,5 +1,4 @@
 function spaw(spawn){
-  input='hi';
   console.log("got spawn, which is");
   console.log(spawn);
   let argv= input.value;

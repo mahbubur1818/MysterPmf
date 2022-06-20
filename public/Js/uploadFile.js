@@ -8,8 +8,8 @@ $("#file").on("change", function (e) {
     $('#warning').text("");
     var DoUpload = true;
     $('#warning').css({'color':'red'})
-    if (size > (1024*1024)){
-      $('#warning').text("Sorry, file should be less than 1024KB")
+    if (size > (1024*512)){
+      $('#warning').text("Sorry, file should be less than 512KB")
       var DoUpload = false;
     }
 

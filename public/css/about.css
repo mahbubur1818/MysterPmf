@@ -89,7 +89,11 @@ body{
 #social_media svg path{
   fill: rgba(255,255,255,0.6);
 }
-
+/* external */
+#header2 #nav ul{
+  list-style: none;
+  margin-left: -40px;
+}
 /*bubbles*/
 
 #bubbles_con div{

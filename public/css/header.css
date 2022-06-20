@@ -135,7 +135,7 @@
 		background:#D9EEE1;
 		box-shadow: 4px 4px 6px rgba(0,0,0,0.5);
 		margin-left: -80%;
-	}
+	}transition
 	#header2 #nav li a{
     padding: 10px;
 		text-decoration: none;

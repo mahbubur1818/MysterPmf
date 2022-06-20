@@ -49,12 +49,12 @@ $('#commentForm').on('submit',(e)=>{
   }
   console.log(data);
   $.ajax({
-    url: 'http://88.99.83.158:5000/message',
+    url: 'https://mysterpmf.me/message',
     data: data,
     method: 'POST',
     success: (response)=>{
       console.log(response)
-      $('#success').text('Thank you. Pmf will reply you.');
+      $('#success').text('Thank you. Pmf will reply you in your email.');
       $('#success').css({'color':'green',
         'margin-bottom': '20px'
       });
