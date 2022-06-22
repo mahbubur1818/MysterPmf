@@ -92,10 +92,12 @@ body{
 /* external */
 #header2 #nav ul{
   list-style: none;
-  margin-left: -40px;
+  margin-left: -40p;
 }
 /*bubbles*/
-
+#bubbles_con{
+  display: none;
+}
 #bubbles_con div{
 	width: 60px;
 	height: 60px;
