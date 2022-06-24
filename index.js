@@ -129,6 +129,9 @@ transport.sendMail(mailDetails, function(err, data) {
   res.send({'status':true})
 })
 
+app.get("/Login",(req,res)=>{
+  res.render("login")
+})
 
 app.get('/*',(req,res)=>{
   res.render("404");
