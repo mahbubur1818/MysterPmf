@@ -110,13 +110,75 @@
       <button id="catBtn">I am a Cat</button> </div>
       <p id="afterCat">After becoming a cat leave a message.</p>
       <p id="reply"></p>
-      </div>
-      
+    </div>
+  
       <script type="text/javascript">
       
-        let a = 0;
-        let reply = [ "Don't  lie", "Be honest",'😾'];
-        $('#catBtn').click(()=>{
+        let reply = [
+            "Are you sure?",
+            "Really?", "Seriously?",
+            "don't lie",
+            "I know you're lying",
+            "haha i can tell you are not a cat",
+            "you can't fool me",
+            "Tough aren't ya",
+            "It's useless",
+            "only cats are allowed",
+            "stubborn, aren't ya",
+            "It's no use",
+            "go back...",
+            ". .",
+            ". . . .",
+            ". . . stop",
+            ". . .",
+            "you listening?",
+            ". . .",
+            ". . . .",
+            ". . . i",
+            ". . s-stop",
+            ". . .",
+            ". .",
+            ". . .",
+            "ARE YOU DUMP?!",
+            "YOU ARE NOT A CAT IDIOT",
+            "ONLY CATS ARE ALLOWED",
+            "YOU ARE NOT ALLOWED HERE",
+            "STOOOPP YOU IDIOT",
+            "NOO YOU ARE NOT A CAT",
+            "GOOO BACK, U NOT A CAT",
+            "T_T",
+            "STOP!!!, you idiot T_T",
+            "T_T",
+            "...",
+            ". . .",
+            ". . . . . . .",
+            ". . .",
+            ". .",
+            ". . .",
+            "let's put a stop here...",
+            ". . .",
+            ". .",
+            ".",
+            "listen to me.. u not a cat",
+            ". . . . .",
+            ". . .",
+            ". .",
+            "aren't you tried?",
+            "r-really",
+            "..i-I..",
+            "y-you.. not.. a.. cat",
+            "😾 Ok ok I will give you a chance, be grateful, ok?",
+            "<a href='https://www.demilked.com/funny-illustration-guide-how-to-be-cat-lisa-swerling-ralph-lazar/' >How to be a cat properly</a>"
+        ], i = 0;
+        
+        $('#catBtn').on('click', (e) => {
+            $('#cat').addClass('anime');
+            setTimeout(() => $('#cat').removeClass('anime'), 1000);
+            $('#reply').html(reply[i] || `you need to train for a year<br>${reply[reply.length - 1]}<br>After becoming full-fledged cat, come back here and try again`);
+            i++;
+        });
+        
+        /* $('#catBtn').click(()=>{
           $('#cat').addClass('anime');
           setTimeout(()=>{
           $('#cat').removeClass('anime');
@@ -136,7 +198,7 @@
           $('#reply').text(reply[a]);
           }
           a=a+1;
-        });
+        });*/
       </script>
   </body>
 </html>
